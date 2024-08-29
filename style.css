@@ -3,315 +3,1102 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(0,0,0);
 }
-.netlix-icon{
-    width: 30px;
-    height: 30px;
-}
-.hero{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.hero-img{
-    width: 100%;
-    height: 100vh;
-    transform: scale(1.4); 
-}
-.tint{
-    background-color: rgba(0, 0, 0, 0.45);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.content{
-    position: absolute;
-    top: 0;
-    color: white;
-    width: 830px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align:center;
-}
-.nav{
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 1175px;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    align-items: center;
-}
-.logo{
-    color: red;
-    height: 130px;
-    width: 130px;
-    object-fit: cover;
-}
-.nav-flex{
-    display: flex;
-    gap: 20px;
-}
-.login-btn{
-    padding: 8px 16px;
-    border: none;
-    background-color: red;
-    color: white;
-    border-radius: 6px;
-    font-size: 14px;
-    width: 75px;
-    font-weight: 500;
-}
-.en-btn{
-    background-color: #0000006e;
-    color: white;
-    border: 1px solid #eeeeee87;
-    padding: 8px 30px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-.title{
-    font-size: 46px;
-    text-align: center;
-}
-.sub-title{
-    font-size: 26px;
-}
-.desc{
-    font-size: 18px;
-}
-.content-input{
-    width: 320px;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.555);
-    padding: 12px;
-    border: none;
-    border: 1px solid #eeeeee9c;
-    border-radius: 4px;
-}
-.content-flex{
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-}
-.content-btn{
-    padding: 14px;
-    color: white;
-    background-color: rgb(229, 9, 20);
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    width: 190px;
-    justify-content: center;
-    height: 56px;
-}
-.mt{
-    padding-top: 10px;
+
+/* Media queries
+    Big screens ==> above 990px
+    Medium screens ==> 586 to 990px
+    Mobile screens ==> below 586px
+*/
+
+/* Bigger screen */
+@media (min-width: 990px){
+    .hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        /* position: relative; */
+    }
+    
+    .hero-img{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.4); 
+    }
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .content{
+        position: absolute;
+        top: 0;
+        color: white;
+        width: 830px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 1175px;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    .logo{
+        color: red;
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+    }
+    .nav-flex{
+        display: flex;
+        gap: 20px;
+    }
+    .login-btn{
+        padding: 8px 16px;
+        /* font-weight: bold; */
+        border: none;
+        background-color: red;
+        color: white;
+        border-radius: 6px;
+        font-size: 14px;
+        width: 75px;
+        font-weight: 500;
+    }
+    .en-btn{
+        background-color: #0000006e;
+        color: white;
+        border: 1px solid #eeeeee87;
+        padding: 8px 30px;
+        /* font-weight: bold; */
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 4vmax;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 26px;
+    }
+    .desc{
+        font-size: 18px;
+    }
+    .content-input{
+        width: 320px;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.555);
+        padding: 12px;
+        border: none;
+        border: 1px solid #eeeeee9c;
+        border-radius: 4px;
+    }
+    .content-flex{
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+    }
+    .content-btn{
+        padding: 14px;
+        color: white;
+        background-color: rgb(229, 9, 20);
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 190px;
+        justify-content: center;
+        height: 56px;
+    }
+    .mt{
+        padding-top: 10px;
+    }
+    
+    /* second part */
+    .container{
+        display: flex;
+        color: white;
+        width: 990px;
+        margin: 100px auto;
+        gap: 80px;
+        align-items: center;
+    }
+    .left{
+        width: 50%;
+    }
+    .right{
+        width:50%;
+    }
+    .tv{
+        position: relative;
+        width: 100%;
+        /* transform: translateY(-20%); */
+        /* transform: translateX(0); */
+    }
+    .video{
+        position: absolute;
+        width: 80%;
+        height: 90%;
+        object-fit: contain;
+        margin-left: 60px;
+    }
+    .real-tv{
+        position: relative;
+        display: block;
+    }
+    .heading{
+        font-size: 48px; 
+    }
+    .sub-heading{
+        font-size: 24px;
+    }
+    .section{
+        border-bottom: 8px solid #eeeeee60;
+    }
+    /* Kids section */
+    .kids-img{
+        width: 100%;
+    }
+    /* Trending section */
+    .trending-container{
+        /* display: flex; */
+        color: white;
+        width: 80vw;
+        /* margin: 100px auto; */
+        /* gap: 80px; */
+        /* align-items: center;    */
+        margin: 30px auto;
+        height: 410px;
+    }
+    .trending-now{
+        height: 130px;
+    }
+    .india-movies{
+        display: flex;
+        gap: 30px;
+    }
+    select{
+        border: none;
+        padding: 10px 13px;
+        background-color: black;
+        border: 1px solid #eeeeee79;
+        color: white;
+        font-weight: 600;
+    }
+    .top-movies-list{
+        display: flex;
+        gap: 130px;
+        width: 100%;
+        overflow: scroll;
+        flex-shrink: 0;
+    }
+    .top-movies-list::-webkit-scrollbar{
+        display: none;
+    }
+    .movies{
+        position: relative;
+        width: 120px;
+        height: 300px;
+    }
+    .movies-border{
+        border-radius: 14px;
+        z-index: 0;
+    }
+    .rank{
+        z-index: 1;
+        position: absolute;
+        top: 63%;
+        left: -5%;
+        color: rgb(9, 7, 77);
+        /* text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5); */
+        /* outline: 1px solid white; */
+        /* font-size: 70px; */
+        /* -webkit-text-stroke: 0.25rem rgb(255, 255, 255) */
+        
+    }
+    .rank-pic{
+        width: 50px;
+        height: 50px;
+    }
+    /* More reasons */
+    .more-reasons{
+        display: flex;
+        gap: 20px;
+    }
+    .articles{
+        width: 17vw;
+        height: 40vh;
+        background-color: rgb(89 68 112 / 72%);
+        flex-shrink: 0;
+        padding: 15px;
+        border-radius: 14px;
+        position: relative;
+    }
+    .reasons-icons{
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+    }
+    /* Frequent qns */
+    .frequent-container{
+        color: white;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .questions{
+        /* width: 60vw; */
+        width: 70vw;
+        background-color: rgba(128, 128, 128, 0.475);
+        height: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .questions:hover{
+        background-color: rgba(186, 174, 174, 0.475);
+    }
+    .qn{
+        font-size: 24px;
+        font-weight: 400px;
+    }
+    .email-started{
+        display: flex;
+        gap: 9px;
+    }
+    .email-input{
+        width: 49vw;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        border: 1px solid #eeeeee60;
+        font-size: 16px;
+        padding-left: 20px;
+        font-weight: 600;
+        /* height: 50px; */
+    }
+    .ready-to-watch{
+        margin-top: 60px;
+    }
+    /* footer-section */
+    
+    .footer-section{
+        margin: 10px auto;
+        width: 76vw;
+        color: rgba(255, 255, 255, 0.7);
+        /* padding: 20px 0px; */
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        padding-top: 25px;
+    }
+    .footer-column{
+        width: 350px;
+        height: 160px;
+    }
+    .target{
+        display: block;
+        color: rgba(255, 255, 255, 0.621);
+        padding-bottom: 10px;
+    
+    }
+    .call{
+        display: inline;
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .lan-en-hindi{
+        display: flex;
+        align-items: center;
+        width: 120px;
+        border: 1px solid #eeeeee81;
+        /* justify-content: space-between; */
+        /* padding: 2px 10px; */
+        /* height: 20px; */
+        padding-left: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .lan{
+        border: none;
+    }
+    .netflix-india{
+        margin-top: 30px;
+        color: rgba(255, 255, 255, 0.621);
+        margin-bottom: 110px;
+    }
+    
 }
 
-/* second part */
-.container{
-    display: flex;
-    color: white;
-    width: 990px;
-    margin: 100px auto;
-    gap: 80px;
-    align-items: center;
+/* Medium screen */
+@media (min-width: 586px) and (max-width: 990px){
+    .hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        /* position: relative; */
+    }
+    
+    .hero-img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        transform: scale(1.2); 
+    }
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+    }
+    .content{
+        position: absolute;
+        top: 0;
+        color: white;
+        /* width: 830px; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        /* width: 990px; */
+        width: calc(100vw - 40px);
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    .logo{
+        color: red;
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+    }
+    .nav-flex{
+        display: flex;
+        gap: 20px;
+    }
+    .login-btn{
+        padding: 8px 16px;
+        /* font-weight: bold; */
+        border: none;
+        background-color: red;
+        color: white;
+        border-radius: 6px;
+        font-size: 14px;
+        width: 75px;
+        font-weight: 500;
+    }
+    .en-btn{
+        background-color: #0000006e;
+        color: white;
+        border: 1px solid #eeeeee87;
+        padding: 8px 30px;
+        /* font-weight: bold; */
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 5vmax;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 26px;
+    }
+    .desc{
+        font-size: 18px;
+    }
+    .content-input{
+        width: 320px;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.555);
+        padding: 12px;
+        border: none;
+        border: 1px solid #eeeeee9c;
+        border-radius: 4px;
+    }
+    .content-flex{
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+    }
+    .content-btn{
+        padding: 14px;
+        color: white;
+        background-color: rgb(229, 9, 20);
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 190px;
+        justify-content: center;
+        height: 56px;
+    }
+    .mt{
+        padding-top: 10px;
+    }
+    
+    /* second part */
+    .container{
+       display: flex;
+        color: white;
+        flex-direction: column;
+        /* width: 990px; */
+        /* width: calc(100vw - 80px); */
+        margin: 100px auto;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        width: 80vw;
+        text-align: center;
+    }
+    .right{
+        width:80vw;
+        text-align: center;
+    }
+    .tv{
+        position: relative;
+        width: 100%;
+        /* transform: translateY(-20%); */
+        /* transform: translateX(0); */
+    }
+    .video{
+        position: absolute;
+        width: 80%;
+        height: 90%;
+        object-fit: contain;
+        margin-left: 60px;
+    }
+    .real-tv{
+        position: relative;
+        display: block;
+    }
+    .heading{
+        font-size: 5vmax; 
+    }
+    .sub-heading{
+        font-size: 2.75vmax;
+    }
+    .section{
+        border-bottom: 8px solid #eeeeee60;
+    }
+    /* Kids section */
+    .kids-img{
+        width: 100%;
+    }
+    /* Trending section */
+    .trending-container{
+        /* display: flex; */
+        color: white;
+        width: 90vw;
+        /* margin: 100px auto; */
+        /* gap: 80px; */
+        /* align-items: center;    */
+        /* margin: 30px auto; */
+        height: 410px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .trending-now{
+        height: 130px;
+    }
+    .india-movies{
+        /* display: flex; */
+        gap: 30px;
+    }
+    select{
+        border: none;
+        padding: 10px 13px;
+        background-color: black;
+        border: 1px solid #eeeeee79;
+        color: white;
+        font-weight: 600;
+        width: 93vw;
+        margin-top: 10px;
+    }
+    .top-movies-list{
+        display: flex;
+        gap: 65px;
+        /* width: 100%; */
+        overflow: scroll;
+        flex-shrink: 0;
+        margin-top: 25px;
+        padding: 20px
+    }
+    .top-movies-list::-webkit-scrollbar{
+        display: none;
+    }
+    .movies{
+        position: relative;
+        width: 60px;
+        height: 150px;
+    }
+    .movies-border{
+        border-radius: 8px;
+        z-index: 0;
+        width: 115px;
+    }
+    .rank{
+        z-index: 1;
+        position: absolute;
+        top: 80%;
+        left: -5%;
+        color: rgb(9, 7, 77);
+        /* text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5); */
+        /* outline: 1px solid white; */
+        /* font-size: 70px; */
+        /* -webkit-text-stroke: 0.25rem rgb(255, 255, 255) */
+        
+    }
+    .rank-pic{
+        width: 30px;
+        height: 30px;
+    }
+    /* More reasons */
+    .more-reasons{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .articles{
+        width: 87vw;
+        height: 25vh;
+        background-color: rgb(89 68 112 / 72%);
+        flex-shrink: 0;
+        padding: 15px;
+        border-radius: 14px;
+        position: relative;
+    }
+    .reasons-icons{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    /* Frequent qns */
+    .frequent-container{
+        color: white;
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 500px
+    }
+    .questions{
+        width: 78vw;
+        background-color: rgba(128, 128, 128, 0.475);
+        height: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .questions:hover{
+        background-color: rgba(186, 174, 174, 0.475);
+    }
+    .qn{
+        font-size: 24px;
+        font-weight: 400px;
+    }
+    .email-started{
+        display: flex;
+        gap: 9px;
+        width: 84vw;
+    }
+    .email-input{
+        width: 49vw;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        border: 1px solid #eeeeee60;
+        font-size: 16px;
+        padding-left: 20px;
+        font-weight: 600;
+        /* height: 50px; */
+    }
+    .mail-inp{
+        width: 58vw;
+    }
+    .ready-to-watch{
+        margin-top: 60px;
+    }
+    /* footer-section */
+    
+    .footer-section{
+        margin: 10px auto;
+        width: 76vw;
+        color: rgba(255, 255, 255, 0.7);
+        /* padding: 20px 0px; */
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        padding-top: 25px;
+    }
+    .footer-column{
+        width: 350px;
+        height: 160px;
+    }
+    .target{
+        display: block;
+        color: rgba(255, 255, 255, 0.621);
+        padding-bottom: 10px;
+    
+    }
+    .call{
+        display: inline;
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .lan-en-hindi{
+        display: flex;
+        align-items: center;
+        width: 120px;
+        border: 1px solid #eeeeee81;
+        /* justify-content: space-between; */
+        /* padding: 2px 10px; */
+        /* height: 20px; */
+        padding-left: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .lan{
+        border: none;
+    }
+    .netflix-india{
+        margin-top: 30px;
+        color: rgba(255, 255, 255, 0.621);
+        margin-bottom: 110px;
+    }
+    
 }
-.left{
-    width: 50%;
-}
-.right{
-    width:50%;
-}
-.tv{
-    position: relative;
-    width: 100%;
-}
-.video{
-    position: absolute;
-    width: 80%;
-    height: 90%;
-    object-fit: contain;
-    margin-left: 60px;
-}
-.real-tv{
-    position: relative;
-    display: block;
-}
-.heading{
-    font-size: 48px;
-}
-.sub-heading{
-    font-size: 24px;
-}
-.section{
-    border-bottom: 8px solid #eeeeee60;
-}
-/* Kids section */
-.kids-img{
-    width: 100%;
-}
-/* Trending section */
-.trending-container{
-    color: white;
-    width: 80vw;
-    margin: 30px auto;
-    height: 410px;
-}
-.trending-now{
-    height: 130px;
-}
-.india-movies{
-    display: flex;
-    gap: 30px;
-}
-select{
-    border: none;
-    padding: 10px 13px;
-    background-color: black;
-    border: 1px solid #eeeeee79;
-    color: white;
-    font-weight: 600;
-}
-.top-movies-list{
-    display: flex;
-    gap: 130px;
-    width: 100%;
-    overflow: scroll;
-    flex-shrink: 0;
-}
-.top-movies-list::-webkit-scrollbar{
-    display: none;
-}
-.movies{
-    position: relative;
-    width: 120px;
-    height: 300px;
-}
-.movies-border{
-    border-radius: 14px;
-    z-index: 0;
-}
-.rank{
-    z-index: 1;
-    position: absolute;
-    top: 60%;
-    left: -5%;
-    color: rgb(9, 7, 77);
-}
-.rank-pic{
-    width: 50px;
-    height: 50px;
-}
-/* More reasons */
-.more-reasons{
-    display: flex;
-    gap: 20px;
-}
-.articles{
-    width: 290px;
-    height: 290px;
-    background-color: rgb(89 68 112 / 72%);
-    flex-shrink: 0;
-    padding: 15px;
-    border-radius: 14px;
-    position: relative;
-}
-.reasons-icons{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-/* Frequent qns */
-.frequent-container{
-    color: white;
-    width: 80vw;
-    margin: 0 auto;
-}
-.questions{
-    width: 60vw;
-    background-color: rgba(128, 128, 128, 0.475);
-    height: 40px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-}
-.qn{
-    font-size: 24px;
-    font-weight: 400px;
-}
-.email-started{
-    display: flex;
-    gap: 9px;
-}
-.email-input{
-    width: 49vw;
-    border-radius: 8px;
-    background-color: black;
-    color: white;
-    border: 1px solid #eeeeee60;
-    font-size: 16px;
-    padding-left: 20px;
-    font-weight: 600;
-}
-.ready-to-watch{
-    margin-top: 60px;
-}
-/* footer-section */
 
-.footer-section{
-    margin: 10px auto;
-    width: 76vw;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    font-weight: 600;
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
-    width: 70vw;
-    padding-top: 25px;
-}
-.footer-column{
-    width: 350px;
-    height: 160px;
-}
-.target{
-    display: block;
-    color: rgba(255, 255, 255, 0.621);
-    padding-bottom: 10px;
-
-}
-.call{
-    display: inline;
-    color: rgba(255, 255, 255, 0.774);
-}
-.lan-en-hindi{
-    display: flex;
-    align-items: center;
-    width: 120px;
-    border: 1px solid #eeeeee81;
-    padding-left: 10px;
-    font-size: 18px;
-    border-radius: 5px;
-}
-.lan{
-    border: none;
-}
-.netflix-india{
-    margin-top: 30px;
-    color: rgba(255, 255, 255, 0.621);
-    margin-bottom: 110px;
+/* Smaller screen */
+@media (max-width: 586px){
+    .hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        /* position: relative; */
+    }
+    
+    .hero-img{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.4); 
+    }
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .content{
+        position: absolute;
+        top: 0;
+        color: white;
+        /* width: 830px; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+    }
+    /* .nav{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 1175px;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    } */
+    .nav{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        /* width: 990px; */
+        width: calc(100vw - 40px);
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    .logo{
+        color: red;
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+    }
+    .nav-flex{
+        display: flex;
+        gap: 20px;
+    }
+    .login-btn{
+        padding: 8px 16px;
+        /* font-weight: bold; */
+        border: none;
+        background-color: red;
+        color: white;
+        border-radius: 6px;
+        font-size: 14px;
+        width: 75px;
+        font-weight: 500;
+    }
+    .en-btn{
+        background-color: #0000006e;
+        color: white;
+        border: 1px solid #eeeeee87;
+        padding: 8px 30px;
+        /* font-weight: bold; */
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 5vmax;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 26px;
+    }
+    .desc{
+        font-size: 18px;
+    }
+    .content-input{
+        width: 320px;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.555);
+        padding: 12px;
+        border: none;
+        border: 1px solid #eeeeee9c;
+        border-radius: 4px;
+    }
+    .content-flex{
+        /* display: flex; */
+        justify-content: center;
+        gap: 14px;
+        /* margin-top: 20px; */
+    }
+    .content-btn{
+        padding: 14px;
+        color: white;
+        background-color: rgb(229, 9, 20);
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 190px;
+        justify-content: center;
+        height: 56px;
+        margin-top: 10px;
+    }
+    .mt{
+        padding-top: 10px;
+    }
+    
+    /* second part */
+     /* second part */
+     .container{
+        display: flex;
+         color: white;
+         flex-direction: column;
+         /* width: 990px; */
+         /* width: calc(100vw - 80px); */
+         margin: 100px auto;
+         gap: 80px;
+         align-items: center;
+         justify-content: center;
+     }
+     .left{
+         width: 80vw;
+         text-align: center;
+     }
+     .right{
+         width:80vw;
+         text-align: center;
+     }
+     .tv{
+         position: relative;
+         width: 100%;
+         /* transform: translateY(-20%); */
+         /* transform: translateX(0); */
+     }
+     .video{
+         position: absolute;
+         width: 80%;
+         height: 90%;
+         object-fit: contain;
+         margin-left: 60px;
+     }
+     .real-tv{
+         position: relative;
+         display: block;
+     }
+     .heading{
+         font-size: 5vmax; 
+     }
+     .sub-heading{
+         font-size: 2.75vmax;
+     }
+     .section{
+         border-bottom: 8px solid #eeeeee60;
+     }
+    
+    /* Kids section */
+    .kids-img{
+        width: 100%;
+    }
+    /* Trending section */
+    .trending-container{
+        /* display: flex; */
+        color: white;
+        width: 80vw;
+        /* margin: 100px auto; */
+        /* gap: 80px; */
+        /* align-items: center;    */
+        /* margin: 30px auto; */
+        height: 410px;
+        margin-left: 10px;
+    }
+    .trending-now{
+        height: 130px;
+    }
+    .india-movies{
+        /* display: flex; */
+        gap: 30px;
+    }
+    .movies-drop{
+        margin-top: 10px;
+    }
+    select{
+        border: none;
+        padding: 10px 13px;
+        background-color: black;
+        border: 1px solid #eeeeee79;
+        color: white;
+        font-weight: 600;
+        width: calc(100vw - 50px);
+    }
+    .top-movies-list{
+        display: flex;
+        gap: 65px;
+        width: calc(100vw - 80px);
+        overflow: scroll;
+        flex-shrink: 0;
+        margin-top: 25px;
+        padding: 10px
+    }
+    .top-movies-list::-webkit-scrollbar{
+        display: none;
+    }
+    .movies{
+        position: relative;
+        width: 60px;
+        height: 150px;
+    }
+    .movies-border{
+        border-radius: 8px;
+        z-index: 0;
+        width: 115px;
+    }
+    /* .top-movies-list{
+        display: flex;
+        gap: 130px;
+        width: 100%;
+        overflow: scroll;
+        flex-shrink: 0;
+    }
+    .top-movies-list::-webkit-scrollbar{
+        display: none;
+    }
+    .movies{
+        position: relative;
+        width: 120px;
+        height: 300px;
+    }
+    .movies-border{
+        border-radius: 14px;
+        z-index: 0;
+    } */
+    .rank{
+        z-index: 1;
+        position: absolute;
+        top: 85%;
+        left: -5%;
+        color: rgb(9, 7, 77);
+        /* text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5); */
+        /* outline: 1px solid white; */
+        /* font-size: 70px; */
+        /* -webkit-text-stroke: 0.25rem rgb(255, 255, 255) */
+        
+    }
+    .rank-pic{
+        width: 25px;
+        height: 25px;
+    }
+    /* More reasons */
+    .more-reasons{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .articles{
+        width: calc(100vw - 70px);
+        height: 25vh;
+        background-color: rgb(89 68 112 / 72%);
+        flex-shrink: 0;
+        padding: 15px;
+        border-radius: 14px;
+        position: relative;
+    }
+    .reasons-icons{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    /* Frequent qns */
+    .frequent-container{
+        color: white;
+        width: calc(100vw - 45px);
+        margin: 0 auto;
+        padding-top: 530px
+    }
+    .questions{
+        /* width: calc(100vw - 130px); */
+        background-color: rgba(128, 128, 128, 0.475);
+        height: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .questions:hover{
+        background-color: rgba(186, 174, 174, 0.475);
+    }
+    .qn{
+        font-size: 24px;
+        font-weight: 400px;
+    }
+    .email-started{
+        /* display: flex; */
+        gap: 9px;
+    }
+    .email-input{
+        /* width: 49vw; */
+        /* border-radius: 8px; */
+        background-color: black;
+        color: white;
+        /* border: 1px solid #eeeeee60; */
+        /* font-size: 16px; */
+        /* padding-left: 20px; */
+        font-weight: 600;
+        /* height: 50px; */
+        width: calc(100vw - 80px);
+        font-size: 15px;
+        background-color: rgba(0,0,0,0.555);
+        padding: 16px;
+        border: 1px solid #eeeeee9c;
+        border-radius: 4px;
+    }
+    .ready-to-watch{
+        margin-top: 60px;
+    }
+    /* footer-section */
+    
+    .footer-section{
+        margin: 50px auto;
+        /* width: 76vw; */
+        color: rgba(255, 255, 255, 0.7);
+        /* padding: 20px 0px; */
+        font-size: 14px;
+        font-weight: 600;
+        width: calc(100vw - 50px);
+    }
+    .footer{
+        /* display: flex; */
+        justify-content: space-between;
+        width: 70vw;
+        /* padding-top: 25px; */
+    }
+    .footer-column{
+        width: 350px;
+        /* height: 160px; */
+    }
+    .target{
+        display: block;
+        color: rgba(255, 255, 255, 0.621);
+        padding-bottom: 10px;
+    
+    }
+    .call{
+        display: inline;
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .lan-en-hindi{
+        display: flex;
+        align-items: center;
+        width: 120px;
+        border: 1px solid #eeeeee81;
+        /* justify-content: space-between; */
+        /* padding: 2px 10px; */
+        /* height: 20px; */
+        padding-left: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .lan{
+        border: none;
+    }
+    .netflix-india{
+        margin-top: 30px;
+        color: rgba(255, 255, 255, 0.621);
+        margin-bottom: 110px;
+    }
+    
 }
